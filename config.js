@@ -12,16 +12,16 @@ module.exports = {
   embedColor: "#1db954",
   activityName: "Stalin apolloBelvedre", 
   activityType: "Wisdom Circle",  // Available activity types : LISTENING , PLAYING
-  SupportServer: "https://discord.gg/7CAjVPew",
+  SupportServer: "https://discord.gg/QGMKQd9NJW",
   embedTimeout: 5, 
   errorLog: "", 
   nodes: [
-     {
-      name: "XX",
-      password: "0682240100razor",
-      host: "78.46.65.243",
-      port:  5643,
+    {
+      name: "Avinan",
+      password: "avinan",
+      host: "new-york-node-1.vortexcloud.xyz",
+      port:  9323,
       secure: false
-    }
+} 
   ]
 }
