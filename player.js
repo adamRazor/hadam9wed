@@ -102,7 +102,7 @@ function initializePlayer(client) {
                 iconURL: musicIcons.playerIcon,
                 url: config.SupportServer
             })
-            .setFooter({ text: `Developed by SSRR | Prime Music v1.2`, iconURL: musicIcons.heartIcon })
+            .setFooter({ text: `Developed by apollo | Wisdom Music v1.2`, iconURL: musicIcons.heartIcon })
             .setTimestamp()
             .setDescription(  
                 `- **Title:** [${track.info.title}](${track.info.uri})\n` +
@@ -162,7 +162,7 @@ function initializePlayer(client) {
                 if (!nextTrack) {
                     await cleanupTrackMessages(client, player);
                     player.destroy();
-                    await channel.send("⚠️ **No more tracks to autoplay. Disconnecting...**");
+                    await channel.send("⚠️ **Safi TsalaT Lmzzika babay azzin...**");
                 }
             } else {
                 await cleanupTrackMessages(client, player);
@@ -253,7 +253,7 @@ function setupCollector(client, player, channel, message) {
         if (!voiceChannel || voiceChannel.id !== playerChannel) {
             const vcEmbed = new EmbedBuilder()
                 .setColor(config.embedColor)
-                .setDescription('🔒 **You need to be in the same voice channel to use the controls!**');
+                .setDescription('🔒 **Had Bot kayn Fchi Room Okhra Jreb Chi wa7d akher**');
             const sentMessage = await channel.send({ embeds: [vcEmbed] });
             setTimeout(() => sentMessage.delete().catch(console.error), config.embedTimeout * 1000);
             return;
@@ -330,7 +330,7 @@ function adjustVolume(player, channel, amount) {
         sendEmbed(channel, amount > 0 ? '🔊 **Volume is already at maximum!**' : '🔉 **Volume is already at minimum!**');
     } else {
         player.setVolume(newVolume);
-        sendEmbed(channel, `🔊 **Volume changed to ${newVolume}%!**`);
+        sendEmbed(channel, `🔊 **Volume tbdel l... ${newVolume}%!**`);
     }
 }
 
@@ -392,7 +392,7 @@ async function getLyrics(trackName, artistName, duration) {
 
 async function showLyrics(channel, player) {
     if (!player || !player.current || !player.current.info) {
-        sendEmbed(channel, "🚫 **No song is currently playing.**");
+        sendEmbed(channel, "🚫 **makayn 7etta chi music khaedama**");
         return;
     }
 
@@ -400,7 +400,7 @@ async function showLyrics(channel, player) {
     const lyrics = await getLyrics(track.title, track.author, Math.floor(track.length / 1000));
 
     if (!lyrics) {
-        sendEmbed(channel, "❌ **Lyrics not found!**");
+        sendEmbed(channel, "❌ **MalQiTch lkalimat dyal had song...**");
         return;
     }
 
