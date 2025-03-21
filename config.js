@@ -1,12 +1,12 @@
 
 
 module.exports = {
-  TOKEN: "",
+  TOKEN: "MTM0NjU0NDE5NzY4Mjg1NjAzOA.GwNo8a.fpteawEUpAycqrefL7yTlOgAr6q_D2NGP1BZ-Y",
   language: "en",
   ownerID: ["1004206704994566164", ""], 
   mongodbUri : "mongodb+srv://razorclaw996:0654788685razor@discordbot.dkbsd.mongodb.net/?retryWrites=true&w=majority",
-  spotifyClientId : "",
-  spotifyClientSecret : "",
+  spotifyClientId : "b93de522bb09445da93e8638e0e326e0",
+  spotifyClientSecret : "a500b43b2797408193f143693b7db78d",
   setupFilePath: './commands/setup.json',
   commandsDir: './commands',  
   embedColor: "#1db954",
